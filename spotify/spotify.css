@@ -1,0 +1,605 @@
+body
+{
+	margin:auto 0;
+	background-color: black;
+	 /*background-image: linear-gradient(black,#1DB954);*/
+	 /*background-image: url(greeen.jpg);*/
+	 background-color: #010700;
+}
+
+.logo
+{
+	/*height: 100px;*/
+	background-color: black;
+	text-align: center;
+	/*position: sticky;*/
+	/*top: 0;*/
+}
+
+.simg
+{
+	height: 100px;
+	padding: 20px;
+}
+
+.containerr {
+margin-left: 30px;
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #1DB954;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 45%;
+}
+
+.logout
+{
+	float: right;
+	padding: 4%;
+	background-color: #1DB954;
+	border: none;
+	font-family: 'Bree Serif', serif;
+	font-size: 1em;
+	border-radius: 25px 0 0 25px;
+	color: white;
+	transition: all 1.5s;
+	cursor: pointer;
+}
+
+.logout:hover
+{
+	background-color: #006C25;
+	/*border: 2px solid white;*/
+}
+
+.btn
+{
+	padding-right: 10px;
+}
+
+.bar
+{
+	height: 2.5em;
+	border: 2px solid #1DB954;
+	border-radius: 25px;
+	padding: 5px;
+	color: #1DB954;
+	background-color:black; 
+}
+
+
+
+.search
+{
+	text-align: center;
+}
+
+.nav
+{
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom:10px
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#1DB954;
+  display: block;
+  transition: all 0.3s;
+   font-family: 'Bree Serif', serif;
+   opacity: .6;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  opacity: 1;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#main
+{
+	margin:0;
+}
+
+.textt
+{
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 1.5em;
+	color: #1DB954;
+	background-color: black;
+	margin: 0;
+}
+
+.box
+{
+	height: 200px;
+	width: 200px;
+	background-color:  #1DB954;
+	margin: px;
+
+}
+
+.feed
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5px 5px;
+	margin-left: 43%;
+	margin-right: 43%;
+	justify-content: space-around;
+	margin-top:30px;
+	/*background-color: */
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/////
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-bo {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px;
+}
+
+.flip-bo-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-bo:hover .flip-bo-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-bo-front, .flip-bo-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-bo-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-bo-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:0%;
+  width: 100%;
+  opacity: 0;
+
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100%;
+  width: 0%;
+  opacity: 0;
+
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:0%;
+  width: 0%;
+  opacity: 0;
+
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  height:100%;
+  opacity: 1;
+}
+
+.container:hover .overlay1 {
+  width:100%;
+  opacity: 1;
+}
+
+.container:hover .overlay2 {
+  width:100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  /*padding: 50px;*/
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #1DB954;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 6s;
+}
+
+
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{opacity: 0;}
+}
+
+.show
+{
+	padding: 50px;
+	padding-bottom: 0;
+}
+
+.parallex1
+{
+	font-family: 'Francois One', sans-serif;
+	font-size: 40px;
+	color: white;
+	/*border-top: 2px solid white;*/
+	justify-content: center;
+	align-content: center;
+    display: grid;
+    background-image: url("news.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallex2
+{
+	font-family: 'Francois One', sans-serif;
+	font-size: 40px;
+	color: white;
+	/*border-top: 2px solid white;*/
+	justify-content: center;
+	align-content: center;
+    display: grid;
+    background-image: url("choices.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.footer
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px;
+  cursor: pointer;
+  color: #999999;
+  background-color: black;
+  padding-top: px;
+}
+
+.cont:hover
+{
+  color: #1DB954;
+}
+
+.songs
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+}
+
+.song
+{
+	/*border: 2px solid #1DB954;*/
+	text-align: center;
+	justify-content: center;
+	/*font-size: 2em;*/
+	font-family: 'Bree Serif', serif;
+	color:#1DB954;
+	text-decoration:none;
+	transition: all 1s;
+	/*border-radius: 25px;*/
+}
+
+.song:hover
+{
+	 transform: scale(1.05);
+}
+
+.recent
+{
+	font-size: 1.5em;
+	font-family:  'Francois One', sans-serif;
+	text-align: center;
+	padding: 20px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.heading
+{
+	font-family:  'Francois One', sans-serif;
+	color: white;
+	padding: 15px;
+	background-color: pink;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.s
+{
+	font-family: 'Bree Serif', serif;
+	/*text-decoration:none;*/
+	/*marker-start: 3px;*/
+	background-color: #1DB954;
+	padding: 5px;
+	margin: 3px;
+	border-radius: 5px;
+}
+
+.a
+{
+	background-color: #FF3900;
+}
+
+.b
+{
+	background-color: #0A5BC3
+}
+
+.c
+{
+	background-color: #BC01C2;
+}
+
+.playlist
+{
+	font-family: 'Francois One', sans-serif;
+	font-size: 2em;
+	color: white;
+	padding: 10px;
+}
+
+#main2
+{
+	display: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
